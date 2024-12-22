@@ -1,4 +1,130 @@
- Session -01    Date: 16-DEC-2024
-    what is DevOps?
-    waterfall vs Agile vs DevOps
-    SDLC
+
+SESSION-01
+=============
+SDLC
+Waterfall vs Agile vs DevSecOps
+What is DevOps?
+Linux
+
+SDLC --> Software Development Life cycle
+
+Requirements analysis
+Planning
+Design --> General requirements to technical requirements
+Implementation
+Testing
+Deployment
+Maintainance
+
+Waterfall
+===========
+
+SMS --> School Management System
+
+100 years back --> Final exam
+
+stakeholders
+============
+Teachers -> Not serious to complete syllabus from DAY-1
+Parents -> Yes. Worried about whether they pass or not
+Students -> Not serious to study from DAY-1
+
+30%
+
+Process Change
+============
+UNIT TEST-I, II, III, IV
+Q, H, PRE-FINAL, Final
+
+UNIT TEST-I --> 30 days
+Teachers --> They should be serious from DAY-1 to complete syllabus for UNIT TEST-I
+Students --> 1 week before UNIT TEST-I
+Parents --> They are waiting for UNIT TEST-I results
+
+80%
+
+Parents --> Clients
+Students --> Developers, Operations team or Testing team
+Teachers --> IT Management
+
+Waterfall
+==========
+Requirements -> Phase-I
+Once you are in Phase-II
+You can't go back and change the requirements
+
+6 months for development --> Testing and Deployment
+100 defects --> 10 invalid defects
+
+50 defects --> 6 invalid defects
+
+Ambassdor
+
+Agile
+=========
+Requirements analysis
+Planning
+Design --> General requirements to technical requirements
+Implementation
+Testing
+Deployment
+Maintainance
+
+Modules --> Signup, Login, Menu, Order, Shipping, Delivery, Payments
+
+Signup --> 1 month
+
+2 weeks for development, 2 weeks for testing and deployment
+
+development is serious from DAY-1
+
+20 defects --> 5 invalid defects
+
+Honda City
+
+
+Waterfall --> 10 times testing --> 100
+Agile --> 30 times testing --> 101
+DevOps --> 100 times --> 102
+
+Agile is part of DevOps
+============
+Modules --> Signup, Login, Menu, Order, Shipping, Delivery, Payments
+
+Signup
+========
+1 month
+DAY-1 --> 100 lines of code --> enter your first name, enter your last name
+deploy this 100 lines --> test this 100 lines
+
+3 defects --> Co-operation, Co-ordination, Collobaration between teams
+
+DAY-10 --> We should deploy and test everything.
+
+DevOps is a process of building, testing and releasing code on the same day when developer writes something. through this process we can acheive colloboration between teams, faster releases and less defects
+
+Speed and Accuracy
+
+DEV, PROD
+DEV, QA, PROD
+DEV, QA, UAT, PRE-PROD, PROD
+DEV, QA, UAT, PERF, SECURITY, PRE-PROD, PROD
+
+Linux
+=========
+Windows
+--------
+We need to restart sometimes --> It can run for years
+Too many graphics -> Time to load --> No graphics --> Super performance
+Resource consumption --> Less resource consumption
+Not that much secure --> Secure
+Costly --> Free
+Not Opensource --> Opensource
+
+Server Creation, Linux Commands, Editors, User creation, Install Softwares, Service management
+
+AWS Account creation
+
+i3, 8GB ram
+i5, 16GB
+i7, 16GB
