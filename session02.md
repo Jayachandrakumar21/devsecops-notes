@@ -1,4 +1,3 @@
-alt text
 What is computer? What is Client Server architecture?
 
 RAM Storage OS Processor
