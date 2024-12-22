@@ -1,7 +1,0 @@
-Session-02 17-Dec-2024
-  what is a Computer?
-  Client Server Architecture
-  Public key and Private key
-  Firewall creation
-  Import keypair
-  Instance Creation
