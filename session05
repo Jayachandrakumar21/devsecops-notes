@@ -1,9 +1,117 @@
-session-05 topics 20-12-2024
-permissions
+Permissions
+-----------------
+R -> 4
+W -> 2
+X -> 1
+
+- 		rw- 					r-- 			r-- 	ec2-user ec2-user
+file    <owner-who-created>     <group>			<others>
+
+ec2-user --> Owner --> Read and Write
+ec2-user --> Group --> Only Read
+Others --> Other than and owner and group --> Only read
+
+Who can change permissions of file or folder --> owners or root user
+
+owner/user --> u
+group --> g
+others --> o
+
+chmod o+w devsecops.txt
+chmod o-r suresh.txt
+
+chmod ugo+rwx suresh.txt
+
+chmod 740 suresh.txt
+chmod 777 suresh.txt
+chmod 755 suresh.txt
+
+
+admin should ask for suresh public key
+root user can create a folder .ssh in /home/suresh
+ownership of the folder should be on suresh
+chown -R suresh:suresh .ssh
+chown <user>:<group> file/folder
+
+inside .ssh we need to create a file called authorized_keys
+this file owner should be suresh
+permissions can be max 600
+
+ssh -i suresh.pem suresh@IP
+
+/home/suresh --> authorized_keys
+
 Package management
-Service management
-Process management
-Network management
+====================
+windows laptops are cofigured with URL to pull the updates
+
+usually one package depends on other packages...
+
+yum install <package-name>
+dnf install <package-name> --> apt-get is for ubuntu
+
+dnf remove <package-name>
+
+dnf list installed -> already installed inside linux
+dnf list available --> all - installed
 
 
+Service Management
+====================
+ssh -i <private-key> suresh@IP
 
+request goes to IP, checks SSH is running on port number 22...
+
+systemctl status sshd
+
+http service --> nginx or apache
+
+dnf install nginx -y
+
+start nginx service --> systemctl start nginx
+
+http://IP:80
+
+systemctl stop nginx
+systemctl restart nginx --> restart
+
+systemctl enable nginx --> services will start automatically
+
+systemctl start git --> invalid
+
+few packages are just utilities, they are command line packages. Few packages are service related, we can start/stop/restart/enable
+
+Process Management
+===================
+TL
+Senior
+Junior
+Fresher
+
+TL --> TASK-1 --> Senior
+Senior --> TASK-2 --> Junior
+Junior --> TASK-3 --> Fresher
+
+for TASK-3 TASK-2 is the parent
+for TASK-2 TASK-1 is the parent
+
+Process --> in linux everything is process
+
+echo "Hello World" --> creates one process instance id
+
+gives the result and then mark the process as completed
+
+PPID --> parent process instance id
+
+foreground and background
+
+kill PID --> request to stop
+kill -9 PID --> order to stop
+
+Network Management
+=====================
+netstat -lntp
+
+systemctl status nginx
+ps -ef | grep nginx
+netstat -lntp --> check port is open or not
