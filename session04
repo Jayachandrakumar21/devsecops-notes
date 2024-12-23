@@ -1,6 +1,71 @@
-Session-04 19-Dec-2024 Topics
-VIM editor
-User management
-useradd
-userdelete
+vim editor
+user management
 
+Esc mode is default
+press : to enter into command mode
+
+command mode
+----------------
+:q --> quit
+:wq --> write and quit
+:q! --> force quit without changes
+:/<word-to-find> --> search the word from top to bottom
+:?<word-to-find> --> search the word from bottom to top
+:noh --> no highlight
+:set nu --> set line numbers in the file
+:set nonu --> dont set line numbers
+:28 d --> deleted 28th line
+:3s/word-to-find/word-to-replace --> replaces first occurenece in that line
+:3s/word-to-find/word-to-replace/g --> replaces all occureneces in that line
+:%s/word-to-find/word-to-replace/g --> replaces all occureneces in file
+:%d --> delete entire content
+
+ESC Mode
+---------------
+u --> undo
+yy --> copy the line
+p --> paste
+10p --> paste the lines 10 times
+dd --> cut the line
+gg --> takes to top
+shift+g --> takes to bottom
+
+Insert Mode
+---------------
+press i
+
+Linux Administration
+-------------------------
+User management
+
+create user, add user to any group
+
+useradd <user-name> --> creates user and group with same name
+id <user-name> --> displays user information
+/etc/passwd --> contains user information
+/etc/group --> contains group information
+in linux, a user must have only one primary group and atleast secondary group
+passwd <user-name> --> sets password to the user
+
+groupadd <group-name> --> creates group
+
+usermod -g devops ramesh --> adds ramesh to devops group
+usermod -aG testing ramesh --> adds testing as secondary group to ramesh
+
+CRUD --> 
+
+userdel <user-name>  // delete user
+remove from project,now remove from company
+make sure to first remove from group/project and go for user delete, 
+to do that, do usermod to his default primary group and sub-groups later u may delete user.
+
+later remove him from devops group 
+
+Linux follows key based authentication by default
+
+/etc/ssh/sshd_config --> edit the SSH related configuration
+/etc/ssh/sshd_config --> any mistakes in this file, we cant ssh into server
+systemctl restart sshd
+sshd -t --> check config is correct or not
+
+key based authentication --> ramesh should generate his public key and private key...
