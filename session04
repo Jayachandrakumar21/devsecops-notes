@@ -55,9 +55,9 @@ usermod -aG testing ramesh --> adds testing as secondary group to ramesh
 CRUD --> 
 
 userdel <user-name>  // delete user
-remove from project,now remove from company
+remove from all projects first, nad now remove from company
 make sure to first remove from group/project and go for user delete, 
-to do that, do usermod to his default primary group and sub-groups later u may delete user.
+to do that,do usermod  to his default primary group and sub-groups later u may delete user.
 
 later remove him from devops group 
 
