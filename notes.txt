@@ -1,0 +1,27 @@
+cmd learnd from session 04
+Linux Adminstration cmds
+ useradd <user-name>  //used to add new user
+ id <user-name>  // used to check user details, like uid:userid, ugroup, and sub-groups.
+ passwd <user-name> // to set passwd to the user.
+ cat /etc/passwd  //to check used creation,
+ usermod -g <group-name> <user-name>  //adding user to hhe group as primary
+ usermod -aG <group-name> <user-name>  // adding user to other group, here -a:appending -G: group.
+ userdel <user-name>  // to delete user, in this cmd , user will not be deleted from other groups.
+ cat /etc/group  // to check status of group cration/delition.
+ vim /etc/ssh/sshd_config  // to edit the SSH related configuration ,here we have to edit the sshd_config file to provide password login access.
+                            // linux follows key based authentication by default.
+ systemctl restart sshd  //after editing sshd_config file, we should restart the sshd sevice to apply changes.
+ sshd -t  // to test the configuration is correct or not.
+
+Key based Authentication
+user should generate his keypair (public-key and private-key) and share public-key to Server Admin, using
+
+Session 05
+=============================================================
+
+ Permissions
+ ===========
+ r -- read
+ w -- write
+ x -- exicute
+
