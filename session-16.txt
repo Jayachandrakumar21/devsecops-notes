@@ -37,7 +37,7 @@ HYD DTDC --> Me
 Ansible uses SSH protocol, no need of agent i.e agentless
 Ansible also implmented pull based for few usecases.
 
-adhoc commands
+adhoc commands # ansible adhoc cmd like running ansible modules through command line is called adhoc commands, we use this in quick/urgent senarios
 ====================
 ansible all -i <IP>, -e ansible_user=ec2-user -e ansible_password=DevOps321 -m ping
 
