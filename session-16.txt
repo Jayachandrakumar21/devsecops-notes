@@ -1,0 +1,122 @@
+Disadvantages of shell
+======================
+Error Handling
+Not idempotent
+Homogenous --> only works for a particular distro
+Not scalable to many servers
+Password security
+syntax is not easy
+
+Configuring Server --> plain server to usable server
+
+Configuration Management tools --> Chef, puppet, rundeck, Ansible
+
+push vs pull
+
+pull
+=======
+Delhi --> Hyderabad (DTDC)
+
+Me --> HYD DTDC
+
+time, resources like (person, fuel, money)
+traffic increase
+
+schedule agents once in 30min, they should connect to server and check for new configuration
+internet traffic
+power
+server resources
+extra agent
+
+push
+======
+Delhi --> Hyderabad (DTDC)
+
+HYD DTDC --> Me
+
+Ansible uses SSH protocol, no need of agent i.e agentless
+Ansible also implmented pull based for few usecases.
+
+adhoc commands
+====================
+ansible all -i <IP>, -e ansible_user=ec2-user -e ansible_password=DevOps321 -m ping
+
+inventory --> List of IP address ansible connect to
+
+module
+
+Linux == Command == Ansible == Module
+
+CommandName <Options> <Inputs> == Module Args Inputs
+
+dnf install nginx -y
+
+-b --> become root
+
+systemctl start nginx == service -a "name=nginx state=started"
+
+keep all the commands in a file == shell script
+keep all the modules in a file == playbook
+
+YAML --> Yet Another Markup Language
+Hyper Text Markup Language
+
+<h1>Hello World</h1> -> Hello World as heading
+
+XML 
+
+Banks --> 100 yr back
+
+Name, ACC, Branch, date, Money
+
+Forms --> deposit, withdrawal, etc.. == template
+
+Name --> Sivakumar Reddy
+ACC --> 123456
+Branch --> HYD
+date --> 01-01-25
+money --> 5000
+
+DTO --> data transfer objects
+
+XML --> Extensive Markup Language
+<User>
+	<username>sivakumar@gmail.com</username>
+	<password>admin123</password>
+</User>
+
+JSON --> Java script object notation
+{
+	"username": "sivakumar@gmail",
+	"password": "admin123"
+}
+
+YAML --> Yet Another Markup language
+
+
+<Student>
+	<name>sivakumar</name>
+	<email>info@joindevops.com</email>
+	<addresses>
+		<permaddress>
+			<doorno>123</doorno>
+			<street>gandhi nagar</street>
+		</permaddress>
+		<currentaddress>
+			<doorno>123</doorno>
+			<street>gandhi nagar</street>
+		<currentaddress>
+	</addresses>
+</Student>
+
+inventory --> List of hosts
+
+dnf install nginx -y
+
+500-1500 servers
+linux and windows
+patches --> snapshot before update. prechecks, patch, reboot, postchecks
+tool installations
+
+shell, copy, command, file, variables, conditions, loops, functions, etc..
+roles and vaults
