@@ -1,4 +1,4 @@
-
+created by : jayachandra
 facts == variables
 ansible server --> connecting node --> fetch all the node data
 
