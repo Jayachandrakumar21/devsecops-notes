@@ -1,0 +1,17 @@
+unarchive --> ansible by default thinks src is in the ansible control machine.
+
+Ansible Roles --> DRY (don't repeat yourself) code-reuse
+
+Ansible config --> /etc/ansible/ansible.cfg
+
+1. ANSIBLE_CONFIG (environment variable if set)
+
+2. ansible.cfg (in the current directory)
+
+3. ~/.ansible.cfg (in the home directory)
+
+4. /etc/ansible/ansible.cfg
+
+user, group, roles and permissions
+user --> access
+service --> service
