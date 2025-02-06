@@ -1,0 +1,42 @@
+facts == variables
+ansible server --> connecting node --> fetch all the node data
+
+ansible.builtin.package --> if RHEL9 it runs dnf in the background, if ubuntu it runs apt-get
+
+loops
+=============
+loop
+
+dnf install mysql -y
+
+dnf install git -y
+
+functions == filters
+==============
+we dont have access to create functions. we can use default filters available in ansible..
+
+filters == data manipulations
+
+453.254.2365.213
+
+255.255.255.255
+
+zip --> install zip 
+
+what if module is not available?
+
+shell and command modules
+
+ansible.builtin.shell vs ansible.builtin.command
+
+shell --> it is like you are logging inside the server and executing command... We can access variables, we can use redirections, we can use pipes
+
+command --> this is like running commands from outside, you will not get access to shell variables, redirections, pipes, etc.
+
+simple command --> you can use command module, it is more secure. shell is for complex commands and less secure
+
+ssh ec2-user@IP command
+
+VAR_NAME=$()
+
+deployment and configuration management
