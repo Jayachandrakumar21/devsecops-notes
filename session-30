@@ -1,0 +1,72 @@
+["apple","orange","banana"] --> list
+["apple"] --> list
+
+1. custom
+2. open source
+
+custom
+
+advantages
+==========
+we know what we created and what we want
+
+disadvantages
+==========
+you need to write everything from the scratch
+
+
+open source
+===========
+advantages
+-----------
+everything is ready
+
+disadvantages
+----------
+we dont know what is inside
+we have to wait for the fix if something is wrong, we must update when they updated.
+
+
+# expense-dev-mysql
+resource "aws_security_group" "main" {
+  name        = local.sg_final_name
+  description = var.sg_description
+  vpc_id      = var.vpc_id
+  
+  ingress {
+    from_port        = 80
+    to_port          = 80
+    protocol         = "-1"
+    cidr_blocks      = ["0.0.0.0/0"]
+    ipv6_cidr_blocks = ["::/0"]
+  }
+
+  egress {
+    from_port        = 0
+    to_port          = 0
+    protocol         = "-1"
+    cidr_blocks      = ["0.0.0.0/0"]
+    ipv6_cidr_blocks = ["::/0"]
+  }
+
+  tags = merge(
+    var.common_tags,
+    var.sg_tags,
+    {
+        Name = local.sg_final_name
+    }
+  )
+}
+
+
+resource "aws_security_group_rule" "example" {
+  type              = "ingress"
+  from_port         = 0
+  to_port           = 65535
+  protocol          = "tcp"
+  cidr_blocks       = [aws_vpc.example.cidr_block]
+  ipv6_cidr_blocks  = [aws_vpc.example.ipv6_cidr_block]
+  security_group_id = "sg-123456"
+}
+
+Our junior engineer developed a sg module with ingress rules from the user. Module users started using it, for another requirement they added new firewall seperately. When they run module again our module deleted newly added rule. So we decided not to add sg ingress rules in module development.
