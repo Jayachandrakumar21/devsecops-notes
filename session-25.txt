@@ -1,0 +1,57 @@
+Session-25  DATE: 30-JAN-2025
+Topics
+-Data sources
+-Locals
+-State
+-Remote state with locking
+
+data sources
+==================
+data sources are used to query existing information from the provider. 
+devops-practice --> ami-356dgtr4367yt --> ami id changes when new updates are posted.
+
+data "<type>" "<name>" {
+	
+}
+
+output blocks are used to print the information. It will be used in module development too.
+
+locals
+==================
+locals are used to run the expressions or functions and save the results to variable
+
+locals are used to store expressions, it can even store simple key value pairs just like variables.
+variables can't store expressions. variable can't refer other variable. locals can refer other locals or variables
+variables can be overriden. locals can't be overriden
+
+state management
+==================
+declared/desired infra ==> .tf files. Whatever user write in tf files, that is what user wants
+actual infra ==> what terraform is creating in provider
+
+desired infra == actual infra
+
+terraform.tfstate ==> it is a file terraform creates to know what it is created. this is actual infra created by terraform
+
+someone changed the name of ec2 manually inside console
+
+terraform plan or terraform apply
+
+terraform reads state file and then compare that with actual infra using provider
+
+if you update tf files....
+
+terraform.tfstate --> expense-dev-backend
+compared with tf files --> expense-dev-backend-changed
+
+if you update few paramters, resources will not be created again it will just update
+but few parameters if you update, we are forced to recreate resource
+
+tfstate is very important file, we need to secure it
+
+clone terraform repo --> terraform apply
+duplicate resources or errors
+
+in colloboration environment we must main state file remotely. locking is also important, so that we can prevent parellel executions
+
+AWS S3 bucket
