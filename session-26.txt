@@ -1,1 +1,60 @@
-session
+session:26 Date; 31-jan-2025
+Toics: 
+Dynamic blocks
+for-each loops
+provisioners
+-local exec
+-remote exce
+multi environments in terraform
+
+
+dynamic blocks
+================
+loops are used to create multiple resources.
+dynamic blocks are used to create multiple blocks inside a resource..
+
+for_each loops
+===============
+1. count based loop --> use it to iterate lists
+2. for each loop --> use it to iterate maps
+3. dynamic blocks
+
+mysql --> t3.small
+backend --> t3.micro
+frontend --> t3.micro
+
+mysql -> mysql.daws82s.online --> privateip
+backend --> backend.daws82s.online --> privateip
+frontend --> daws82s.online --> public ip
+
+provisioners
+===============
+provisioners are used to take some action either locally or remote when terraform created servers.. 2 types of provisioners are there
+1. local-exec
+2. remote-exec
+
+we can use provisioners either creation time or destroy time
+
+local --> where terraform command is running that is local..
+remote --> inside the server created by terraform
+
+ansible-playbook -i inventory backend.yaml
+
+
+multiple environments using terraform
+=====================================
+1. tfvars --> used to override default values
+2. workspaces
+3. seperate codebase
+
+DEV and PROD, remote state use
+
+expense-dev-mysql --> mysql-dev.daws82s.online
+expense-dev-backend --> backend-dev.daws82s.online
+expense-dev-frontend --> frontend-dev.daws82s.online
+
+expense-prod-mysql --> mysql-prod.daws82s.online
+expense-prod-backend --> backend-prod.daws82s.online
+expense-prod-frontend --> frontend-prod.daws82s.online
+
+expense-dev or expense-prod
