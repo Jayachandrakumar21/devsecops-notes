@@ -1,5 +1,5 @@
 session:26 Date; 31-jan-2025
-Toics: 
+Topics: 
 Dynamic blocks
 for-each loops
 provisioners
@@ -12,6 +12,8 @@ dynamic blocks
 ================
 loops are used to create multiple resources.
 dynamic blocks are used to create multiple blocks inside a resource..
+
+
 
 for_each loops
 ===============
@@ -33,10 +35,13 @@ provisioners are used to take some action either locally or remote when terrafor
 1. local-exec
 2. remote-exec
 
-we can use provisioners either creation time or destroy time
+we can use provisioners for either creation time or destroy time
 
-local --> where terraform command is running that is local..
-remote --> inside the server created by terraform
+local --> where terraform command is running that is local.
+remote --> inside the server created by Terraform
+
+we use the provisioners to configure the server and also used to integrate ansible in terraform
+graceful shutdown: stopping the running services and shutting down the server is called as graceful shutdown
 
 ansible-playbook -i inventory backend.yaml
 
