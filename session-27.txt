@@ -1,0 +1,81 @@
+Why terraform? advantages
+variables
+	variables.tf
+	terraform.tfvars
+	command line
+	ENV variables
+conditions -> expression ? "true-value" : "false-value"
+loops --> count based, for each, dynamic
+functions
+data sources --> query existing information
+output
+locals --> store expressions in a variable
+state and remote state with locking
+provisioners --> local-exec and remote-exec
+multiple environments --> tfvars
+
+3 ec2, 3 r53 records
+====================
+expense-mysql-dev --> mysql-dev.daws82s.online
+expense-backend-dev --> backend-dev.daws82s.online
+expense-frontend-dev --> frontend-dev.daws82s.online
+allow-tls-dev
+
+expense-mysql-prod --> mysql-prod.daws82s.online
+expense-backend-prod --> backend-prod.daws82s.online
+expense-frontend-prod --> daws82s.online --> public IP
+allow-tls-prod
+
+variables and tfvars
+
+diff bucket and diff dynamodb table  for diff environments
+
+terraform init -reconfigure -backend-config=dev/backend.tf
+
+if instance_name is frontend and environment is prod then name should be daws82s.online
+instance_name-environment.daws82s.online
+
+instance_name is frontend and environment is prod --> and condition
+
+terraform workspaces
+====================
+terraform.workspace --> prod
+
+terraform workspace select prod
+terraform plan
+terraform apply -auto-approve
+
+1. tfvars
+2. workspaces
+3. maintain different repos for diff environment
+
+terraform-expense-dev
+terraform-expense-prod
+
+disadvantages
+================
+should be very careful --> because same code to prod also, any mistake in dev causes confusion in prod
+should have full expertise, too much testing
+
+advantages
+================
+code reuse
+
+disadvantages
+================
+multiple repos to manage
+may be we need more employees
+
+advantages
+================
+clear isolation between environments, no confusion
+
+
+terraform modules
+========================
+variables, functions, ansible roles, locals
+
+modules --> it is like functions, you can pass inputs you will get infra
+code reuse
+enforce standards and best practices
+centralised place to updates
