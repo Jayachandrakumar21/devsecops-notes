@@ -1,0 +1,135 @@
+Old Enterprise
+==============
+Frontend+Backend
+HTML+CSS+JS+JSP+Servlets
+
+app size is very high
+a small change in any frontend or backend should be released and redeployed
+
+release notes
+dev, qa, uat, pre-prod
+client approval
+one entire day for deployment
+sanity testing
+
+Frontend seperate and backend seperate
+=================================
+API
+no dependency
+load on servers are decreased
+
+Angular JS
+Monolithic restful API/services
+HTTP Methods and responses
+
+backend team, single component --> backend
+user, cart, order, shipping, payment, delivery, catalogue, reviews, recommendations, etc..
+Monolithic applications
+=======================
+single backend component
+should use single programming language
+a small error can make entire website down
+
+Microservices
+==================
+User
+Cart
+Catalogue
+Shipping
+Payment
+
+manabadi/eenadu --> emacet results API
+Java --> NodeJS
+client and server can use any programming language
+easy deployment
+website works if any component goes down
+diff components use diff languages
+
+Joint family vs small family vs individual
+==========================================
+independent house to host joint family --> application size is big --> old enterprise
+
+physical server --> dedicated server
+OS --> Hardware
+
+flats --> apartment --> 
+
+single person --> PG, shared room
+
+Physical server
+==============
+disadvantages
+-----------
+costly
+waste of resources --> may not use all ram and HD
+time --> purchase, installation, configuration
+maintanance --> water, electricity, plumbing --> OS, network, etc.
+
+advantages
+-----------
+complete privacy --> single application
+
+
+VM
+==============
+time is less to construct
+less cost
+proper resource utilisation
+less maintanance
+
+disadvantages
+------------
+less privacy
+
+
+Shared room
+==============
+less cost
+time is very less
+no maintanance
+perfect resource utilisation
+
+disadvantages
+------------
+very less security
+
+
+VM vs containers
+=================
+more cost				less cost
+more boot time(min)		less boot time(seconds)
+VM size is big			container size is very less
+block the resources		never block the resource, use it dynamically
+extra hypervisor		no need of extra components
+less portable			portable
+
+
+docker install --> docker group created by default
+usermod -aG docker ec2-user
+logout and login
+
+VM --> AMI --> Instance
+Docker --> Image --> Container
+AMI ==> BaseOS + App runtime + User creation + Folder creation + config files + app code + dependency installation + start/restart app --> 2GB-4GB
+
+Image ==> Bare min OS(10MB-500MB) + App runtime + User creation + Folder creation + config files + app code + dependency installation + start/restart app --> 150 - 500MB
+
+docker ps --> displays running containers
+docker images --> displays the images available
+docker pull image-name
+
+nginx
+======
+alpine OS + Install nginx --> nginx image
+
+docker create <image> --> container will be created
+docker start <container-id>
+docker rm <container-id>
+
+docker pull + create + start == docker run
+docker exec -it 1e74ed63d8d6 bash
+docker run -d
+
+docker run -p host-port:container-port
+docker inspect
+docker logs
