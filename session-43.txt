@@ -1,0 +1,37 @@
+How to create custom docker images?
+
+Dockerfile --> used to create our custom images using instructions provided by docker
+
+RHEL9 == Centos9 == Almalinux9
+FROM
+======
+FROM <BASE-OS>:<version>
+
+how to build docker image?
+
+docker build -t <image-name>:<version> . --> Dockerfile
+
+docker build -t <docker-hub-username>/<image-name>:<version> .
+
+docker login -u <username>
+
+docker push <image-name>:<version>
+
+RUN
+======
+RUN instruction used to install packages, configurations on top of base os. It executes at the time of image building
+
+CMD
+======
+systemctl will not work in containers.. /etc/systemd/system/*.service
+
+RUN vs CMD
+=========
+RUN instruction executes at the time of image building
+CMD instruction executes at the time of container creation
+
+COPY vs ADD
+=========
+COPY and ADD both copies the files to images. but ADD has 2 extra capabilities
+1. copying from directly from internet to the image
+2. extracts tar file directly into image
