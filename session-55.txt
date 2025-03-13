@@ -1,0 +1,3 @@
+session-55
+Topic: Taints and Tolerations, Node Affinity, Pod Affinity/Anti-Affinity
+
