@@ -1,2 +1,84 @@
 Date: 17-03-2025
-Created by : Jayachanrakumar
+Created by: Jayachanrakumar
+
+Suresh joined, we need to give him all readaccess to expense namespace
+
+aws eks update-kubeconfig --region us-east-1 --name expense
+
+ServiceAccount
+================
+Service Account:  default
+when you create namespace or every namespace will have default sa
+sa is a non human account, it is pod identity with which it can connect with api server and get access to external services
+
+pod should access aws secret manager
+1. make sure oidc provider exist
+eksctl utils associate-iam-oidc-provider \
+    --region us-east-1 \
+    --cluster expense \
+    --approve
+
+2. create policy
+3. we need to map sa with IAM policy
+
+eksctl create iamserviceaccount \
+--cluster=expense \
+--namespace=expense \
+--name=expense-mysql-secret \
+--attach-policy-arn=arn:aws:iam::315069654700:policy/ExpenseMySQLSecretRead \
+--override-existing-serviceaccounts \
+--region us-east-1 \
+--approve
+
+this command will create IAM role with policy ExpenseMySQLSecretRead and integrate with EKS SA
+
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::315069654700:role/eksctl-expense-addon-iamserviceaccount-expens-Role1-XUPebrTfkrjM
+  creationTimestamp: "2025-03-17T02:22:46Z"
+  labels:
+    app.kubernetes.io/managed-by: eksctl
+  name: expense-mysql-secret
+  namespace: expense
+  resourceVersion: "7864"
+  uid: 8c97086a-9360-4a82-b77f-142fe47ce1c2
+
+InitContainers
+==================
+InitContainers are used for setup the requirements for pod, for example backend pod can check whether database connections working fine or not
+InitContainers containers can fetch the secrets for pod before it starts
+
+InitContainers are special containers run before main container runs, we can use them to make sure dependent services are running fine before our main application starts and fetch the secrets from secretmanager for main container. they always run to completion. you can run one or many init containers, they executed in sequence
+
+InitContainers can do heavy lifting for main container so that main container is less in size and limit attack surface of main container by not installing more tools in it..
+
+
+aws secretsmanager get-secret-value \
+    --secret-id expense/mysql/creds --query SecretString --output text
+
+volumes --> external volumes
+
+internal volumes --> emptyDir and hostPath
+
+emptyDir --> pod temporary storage, accessible until pod lives. all containers in the pod can access
+init container stores the secret in emptyDir and complete. then the main container can access this
+
+
+what is serviceaccount?
+
+serviceaccount is non human user account, sa is the pod identity with which it can access internal resources or external services. we can map sa with cloud provider IAM roles and policies. we can use sa to fetch secrets from secret manager
+
+what are initcontainers?
+
+these are special containers run before main container run. we can run one or many init containers, all containers run in sequence. init containers will come to completion, we use them to check the dependencies are running fine before main container starts another example can be fetching the secrets and provide to main container.  they do heavy lifting keeping the main container lightweight and less attack surface by not installing utility tools in main container.
+
+what is emptyDir?
+it is pod temporary storage exist until the pod lives, all containers inside pod can acess emptyDir volumes.
+
+OIDC provider
+sa --> IAM Role --> IAM Policy (external roles)
+sa --> Role and RoleBinding (Internal resources access)
+
+
