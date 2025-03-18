@@ -1,15 +1,15 @@
 Date: 17-03-2025
 Created by: Jayachanrakumar
 
-Suresh joined, we need to give him all readaccess to expense namespace
+Suresh joined, we need to give him all readaccess to the expense namespace
 
 aws eks update-kubeconfig --region us-east-1 --name expense
 
 ServiceAccount
 ================
-Service Account:  default
+Service Account:  Default
 when you create namespace or every namespace will have default sa
-sa is a non human account, it is pod identity with which it can connect with api server and get access to external services
+sa is a non-human account, it is pod identity with which it can connect with API server and get access to external services
 
 pod should access aws secret manager
 1. make sure oidc provider exist
