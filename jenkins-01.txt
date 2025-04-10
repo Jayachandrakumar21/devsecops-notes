@@ -1,5 +1,5 @@
-Created by : Jayachandr_kumar
-Topic : CICD usig Jenkin tool
+Created by: Jayachandr_kumar
+Topic : CICD using Jenkin tool
 
 CICD [ Continous Integration Continous Deployment
 
@@ -16,9 +16,9 @@ Manual Integration steps
 -> sonar-scan
 -> Zip --> Zip the application
 -> store the application into some other artifact server
-where as in CI we can automate this process using jenkins (one among the CICD tools)
+whereas in CI we can automate this process using jenkins (one among the CICD tools)
 
-installing Jenkins by following below cmds
+installing Jenkins by using below cmds
 
 sudo wget -O /etc/yum.repos.d/jenkins.repo \
     https://pkg.jenkins.io/redhat-stable/jenkins.repo
@@ -28,3 +28,5 @@ sudo yum upgrade --> you can skip this, as it takes too much time.
 sudo yum install fontconfig java-17-openjdk
 sudo yum install jenkins
 sudo systemctl daemon-reload
+
+In jenkins everything is called as job
