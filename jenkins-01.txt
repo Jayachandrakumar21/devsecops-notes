@@ -33,4 +33,63 @@ sudo systemctl start jenkins
 sudo systemctl enable jenkins
 
 
-In Jenkins everything is called as job
+In Jenkins, everything is called as job. When you trigger it is called as Build
+
+In Jenkins, we have three stages, i.e. --> pre-build, build, and post-build.
+Here build is the main process, and pre-build is for to take any actions before build, and post-build is for to take any actions after build.
+
+Disadvantages in Freestylel job.
+Manually created infra vs Iaac
+==============================
+1. you can't restore if something goes wrong
+2. We cannot  track who made the changes.
+3. can't reuse
+4. no review of changes
+5. no version control
+
+if you make it as pipeline and keep it in github
+
+Sample Groove Pipeline Syntax
+
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo "This is from build stage"
+            }
+        }
+        stage('Test') {
+            steps {
+                echo "This is from test stage"
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo "This is from deploy stage"
+            }
+        }
+    }
+ }
+
+post section in pipeline (post-build)
+
+This post section is used in the pipeline to take any action after the build.
+for an example 
+
+post{
+        always{
+            echo "====++++always++++===="     ---> always run this after build
+        }
+        success{
+            echo "====++++only when successful++++===="  --->if build is success then run this
+        }
+        failure{
+            echo "====++++only when failed++++====" --->  if build is unsuccess run this
+        }
+    }
+
+
+
+
+
