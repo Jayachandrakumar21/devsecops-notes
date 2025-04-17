@@ -1,6 +1,6 @@
-Created by:jayachandra
-cmd learnd from session 04
-Linux Adminstration cmds
+Created by: Jayachandra_kumar
+cmd learned from session 04
+Linux Administration cmds
  useradd <user-name>  //used to add new user
  id <user-name>  // used to check user details, like uid:userid, ugroup, and sub-groups.
  passwd <user-name> // to set passwd to the user.
