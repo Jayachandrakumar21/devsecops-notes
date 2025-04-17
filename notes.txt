@@ -1,4 +1,4 @@
-created by :jayachandra
+Created by:jayachandra
 cmd learnd from session 04
 Linux Adminstration cmds
  useradd <user-name>  //used to add new user
