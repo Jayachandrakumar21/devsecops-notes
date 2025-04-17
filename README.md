@@ -13,7 +13,7 @@ Session-2:
 DATE: 17-DEC-2024
 
 What is a Computer?
-Client Server Architecture
+Client-Server Architecture
 Authentication mechanisms
 Public key and Private key
 Firewall creation
