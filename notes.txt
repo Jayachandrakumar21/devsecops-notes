@@ -1,13 +1,14 @@
 Created by: Jayachandra_kumar
+
 cmd learned from session 04
 Linux Administration cmds
  useradd <user-name>  //used to add a new user
  id <user-name>  //  to check user details, like uid:userid, ugroup, and sub-groups.
  passwd <user-name> // to set the password for the user.
  cat /etc/passwd  //to check used creation,
- usermod -g <group-name> <user-name>  //adding user to hhe group as primary
- usermod -aG <group-name> <user-name>  // adding user to other group, here -a:appending -G: group.
- userdel <user-name>  // to delete user, in this cmd , user will not be deleted from other groups.
+ usermod -g <group-name> <user-name>  //adding user to the group as primary
+ usermod -aG <group-name> <user-name>  // adding user to other group, here -a: appending -G: group.
+ userdel <user-name>  // to delete a user, in this cmd, user will not be deleted from other groups.
  cat /etc/group  // to check status of group cration/delition.
  vim /etc/ssh/sshd_config  // to edit the SSH related configuration ,here we have to edit the sshd_config file to provide password login access.
                             // linux follows key based authentication by default.
@@ -16,6 +17,8 @@ Linux Administration cmds
 
 Key based Authentication
 user should generate his keypair (public-key and private-key) and share public-key to Server Admin, using
+
+to
 
 Session 05
 =============================================================
