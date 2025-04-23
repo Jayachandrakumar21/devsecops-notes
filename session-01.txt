@@ -1,4 +1,4 @@
-#Created by: Jayachandra-kumar
+op#Created by: Jayachandra-kumar
 https://youtu.be/F4jF88UkxV4
 
 SESSION-01
@@ -104,7 +104,7 @@ deploy this 100 lines --> test this 100 lines
 DAY-10 --> We should deploy and test everything.
 
 DevOps is a process of building, testing and releasing code on the same day when developer writes something. through this process we can acheive colloboration between teams, faster releases and less defects
-
+Devops it the cultural shift.
 Speed and Accuracy
 
 DEV, PROD
