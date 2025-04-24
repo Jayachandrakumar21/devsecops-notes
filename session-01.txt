@@ -8,7 +8,7 @@ Waterfall vs Agile vs DevSecOps
 What is DevOps?
 Linux
 
-SDLC --> Software Development Life cycle
+SDLC --> Software Development Life Cycle
 
 Requirements analysis
 Planning
@@ -27,7 +27,7 @@ SMS --> School Management System
 
 stakeholders
 ============
-Teachers -> Not serious to complete syllabus from DAY-1
+Teachers -> Not serious about completing the syllabus from DAY-1
 Parents -> Yes. Worried about whether they pass or not
 Students -> Not serious to study from DAY-1
 
