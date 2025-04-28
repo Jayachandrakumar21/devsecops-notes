@@ -1,4 +1,4 @@
-Created by
+Created by: jayachandra_kumar
 ssh -i <path-to-your-private-key> ec2-user@IP
 
 absolute path and relative path
