@@ -1,4 +1,4 @@
-Created by : jayachandra kumar
+Created by: Jayachandra Kumar
 vim editor
 user management
 
