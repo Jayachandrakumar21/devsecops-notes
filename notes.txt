@@ -1,4 +1,4 @@
-Created by: Jayachandra_kumar
+Created by: Jayachandrakumar
 
 cmd learned from session 04
 Linux Administration cmds
