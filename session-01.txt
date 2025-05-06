@@ -39,7 +39,7 @@ UNIT TEST-I, II, III, IV
 Q, H, PRE-FINAL, Final
 
 UNIT TEST-I --> 30 days
-Teachers --> They should be serious from DAY-1 to complete syllabus for UNIT TEST-I
+Teachers --> They should be serious from DAY-1 to complete the syllabus for UNIT TEST-I
 Students --> 1 week before UNIT TEST-I
 Parents --> They are waiting for UNIT TEST-I results
 
