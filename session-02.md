@@ -1,10 +1,10 @@
 Created by : Jayachandra_kumar
 
-What is computer? What is Client Server architecture?
+What is a computer? What is Client-Server architecture?
 
 RAM Storage OS Processor
 
-IP enable device
+IP-enabled device
 
 Server --> to host application Port forwarding --> You can deploy application in your laptop and open it in internet
 
