@@ -6,9 +6,9 @@ RAM Storage OS Processor
 
 IP-enabled device
 
-Server --> to host application Port forwarding --> You can deploy application in your laptop and open it in internet
+Server --> to host the application. Port forwarding --> You can deploy an application on your laptop and open it on the internet
 
-facebook.com --> facebook application in fb servers browser --> Client software
+facebook.com --> Facebook application in fb servers browser --> Client software
 
 Linux
 Region --> HYD, Mumbai, Singapore, US, EU AZ --> North HYD, South HYD --> min 2 AZ --> High availability
