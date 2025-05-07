@@ -17,7 +17,7 @@ Instance == Server == node
 
 Firewall == Security Group
 
-allow everyone one through firewall
+allow everyone through the firewall
 
 inbound --> incoming traffic outbound --> outgoing traffic
 
