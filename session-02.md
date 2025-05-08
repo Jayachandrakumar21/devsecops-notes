@@ -1,4 +1,4 @@
-Created by : Jayachandra_kumar
+Created by: Jayachandra_kumar
 
 What is a computer? What is Client-Server architecture?
 
