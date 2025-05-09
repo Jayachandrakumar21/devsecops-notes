@@ -16,12 +16,12 @@ sudo su --> root access
 /home/<user-name>
 
 /root --> root user home folder
-sudo su - --> lands into root user home folder /root
+sudo su - --> lands into the root user's home folder /root
 
 <command-name> <options> <inputs>
 
-- --> we can give single char
--- --> we need to give word
+- --> we can give a single char
+-- --> we need to give the word
 
 / --> root of the server
 
