@@ -32,7 +32,7 @@ ls -lr --> reverse alpha order
 ls -lt --> new files on top
 ls -ltr --> old files on top
 ls -ltrh --> human readable
-ls -la --> display all files including hidden files and folders
+ls -la --> display all files, including hidden files and folders
 
 drwx------ --> d means directory
 -rw-r--r-- --> - means file
