@@ -19,7 +19,7 @@ Manual Integration Steps
 -> store the application in some other artifact server
 whereas in CI we can automate this process using Jenkins (one among the CICD tools)
 
-installing Jenkins by using the below commands
+installing Jenkins by using the following commands
 
 sudo curl -o /etc/yum.repos.d/jenkins.repo \
     https://pkg.jenkins.io/redhat-stable/jenkins.repo
