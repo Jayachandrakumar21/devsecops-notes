@@ -1,25 +1,25 @@
 Created by: Jayachandr_kumar
-Topic: CICD using Jenkin tool
+Topic: CICD using Jenkins tool
 
-CICD [ Continous Integration Continous Deployment
+CICD [Continuous Integration Continuous Deployment
 =================================================
 
 Continous Integration
---> It is the way of integrating the code from the source and creating artifacts. Between source and creating artifact we need to install dependencies, run unit test cases, scans, etc.
+--> It is the way of integrating the code from the source and creating artifacts. Between the source and creating the artifact we need to install dependencies, run unit test cases, scans, etc.
  Instead of doing it manually, we can automate it through a continuous integration process.
 
 Example 
-Manual Integration steps
+Manual Integration Steps
 -> Take one server
 -> Git clone <url>
 -> npm install  --> downloads dependencies
 -> npm test --> unit test cases
 -> sonar-scan
 -> Zip --> Zip the application
--> store the application into some other artifact server
+-> store the application in some other artifact server
 whereas in CI we can automate this process using Jenkins (one among the CICD tools)
 
-installing Jenkins by using the below cmds
+installing Jenkins by using the below commands
 
 sudo curl -o /etc/yum.repos.d/jenkins.repo \
     https://pkg.jenkins.io/redhat-stable/jenkins.repo
