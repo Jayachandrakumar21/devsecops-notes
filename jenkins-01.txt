@@ -1,5 +1,5 @@
 Created by: Jayachandr_kumar
-Topic: CICD using Jenkins tool
+Topic: CICD using the Jenkins tool
 
 CICD [Continuous Integration Continuous Deployment
 =================================================
@@ -16,7 +16,7 @@ Manual Integration Steps
 -> npm test --> unit test cases
 -> sonar-scan
 -> Zip --> Zip the application
--> store the application in some other artifact server
+-> Store the application in some other artifact server
 whereas in CI we can automate this process using Jenkins (one among the CICD tools)
 
 installing Jenkins by using the following commands
