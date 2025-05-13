@@ -47,7 +47,7 @@ Manually created infra vs Iaac
 4. no review of changes
 5. no version control
 
-if you make it as pipeline and keep it in github
+if you make it as a pipeline and keep it in github
 
 Sample Groove Pipeline Syntax
 
