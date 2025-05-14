@@ -17,7 +17,7 @@ Manual Integration Steps
 -> sonar-scan
 -> Zip --> Zip the application
 -> Store the application in some other artifact server
-whereas in CI we can automate this process using Jenkins (one among the CICD tools)
+whereas in CI, we can automate this process using Jenkins (one among the CICD tools)
 
 installing Jenkins by using the following commands
 
@@ -33,7 +33,7 @@ sudo systemctl start jenkins
 sudo systemctl enable jenkins
 
 
-In Jenkins, everything is called as job. When you trigger it is called as Build
+In Jenkins, everything is called a job. When you trigger it is called as Build
 
 In Jenkins, we have three stages, i.e. --> pre-build, build, and post-build.
 Here build is the main process, and pre-build is for to take any actions before build, and post-build is for to take any actions after build.
