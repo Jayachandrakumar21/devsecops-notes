@@ -15,8 +15,8 @@ Linux Administration cmds
  systemctl restart sshd  //after editing the sshd_config file, we should restart the sshd service to apply changes.
  sshd -t  // to test the configuration is correct or not.
 
-Key based Authentication
-user should generate his keypair (public-key and private-key) and share the public-key to Server Admin, using
+Key-based Authentication
+user should generate their keypair (public-key and private-key) and share the public-key with Server Admin, using
 
 to
 
