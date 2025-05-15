@@ -12,11 +12,11 @@ Linux Administration cmds
  cat /etc/group  // to check status of group cration/delition.
  vim /etc/ssh/sshd_config  // to edit the SSH related configuration ,here we have to edit the sshd_config file to provide password login access.
                             // linux follows key based authentication by default.
- systemctl restart sshd  //after editing sshd_config file, we should restart the sshd sevice to apply changes.
+ systemctl restart sshd  //after editing the sshd_config file, we should restart the sshd service to apply changes.
  sshd -t  // to test the configuration is correct or not.
 
 Key based Authentication
-user should generate his keypair (public-key and private-key) and share public-key to Server Admin, using
+user should generate his keypair (public-key and private-key) and share the public-key to Server Admin, using
 
 to
 
