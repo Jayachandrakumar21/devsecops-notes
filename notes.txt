@@ -12,7 +12,7 @@ Linux Administration cmds
  userdel <user-name>  // to delete a user, in this cmd, user will not be deleted from other groups.
  cat /etc/group  // to check status of group cration/delition.
  vim /etc/ssh/sshd_config  // to edit the SSH related configuration ,here we have to edit the sshd_config file to provide password login access.
-                            // linux follows key based authentication by default.
+                            //Linux follows key-based authentication by default.
  systemctl restart sshd  //after editing the sshd_config file, we should restart the sshd service to apply changes.
  sshd -t  // to test whether the configuration is correct.
 
