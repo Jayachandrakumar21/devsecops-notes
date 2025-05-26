@@ -1,6 +1,6 @@
 #Created by: Jayachandra_kumar
-Topic: SDLC
-https://youtu.be/F4jF88UkxV4
+#Topic: SDLC
+#https://youtu.be/F4jF88UkxV4
 
 SESSION-01
 =============
