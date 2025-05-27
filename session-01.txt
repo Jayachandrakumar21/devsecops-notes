@@ -77,7 +77,7 @@ Modules --> Signup, Login, Menu, Order, Shipping, Delivery, Payments
 
 Signup --> 1 month
 
-2 weeks for development, 2 weeks for testing and deployment
+2 weeks for development, 2 weeks for testing, and deployment
 
 development is serious from DAY-1
 
