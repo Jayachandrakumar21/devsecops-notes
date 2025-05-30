@@ -2,7 +2,7 @@
 Terraform
 Improvements
 =============
-Ansible vault to SSM paramter/secret integration with Ansible
+Ansible vault to SSM parameter/secret integration with Ansible
 IAM Users migration to IAM Roles -->
 
 shell, ansible, terraform,sql, perl, customised scriptings
