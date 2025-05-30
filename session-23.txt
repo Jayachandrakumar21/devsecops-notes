@@ -1,2 +1,54 @@
 # Topic: IaaC
 Terraform
+Improvements
+=============
+Ansible vault to SSM paramter/secret integration with Ansible
+IAM Users migration to IAM Roles -->
+
+shell, ansible, terraform,sql, perl, customised scriptings
+1. syntax --> variables, data types, conditions, functions and loops, error handling
+2. process understanding
+
+CRUD --> Ansible is failed to manage the infrastrucutre. For example if some manual edits happen ansible can't recognise those. It creates duplicate resources. So ansible is not perfect in state management
+
+Ansible --> with in the server, Ansible is perfect
+
+Manual infra
+=============
+1. time
+2. human errors
+3. cost
+4. reusable effort
+5. don't know who did mistake
+6. modifications are not easy
+7. not scalable
+
+IaaC --> Infra as a code
+
+version control --> you can version control your infra. expense-infra-1.0 expense-infra-2.0
+restore if something goes wrong --> easy to restore if something goes wrong
+Consistent infra --> you can create same infra across all environments
+Inventory management --> you can understand the resources by seeing terraform files
+dependency management --> terraform can understand the dependency between resources. First it will create dependencies and then actual resources
+code reusability --> terraform modules, you can create similar infra for any number of projects using modules
+Cost --> automation of CRUD --> we can save costs
+state management
+declarative --> easy syntax
+Git --> you can review code before apply
+
+ansible modules
+terraform providers --> provider means, a system which terraform can connect and create resources
+
+	terraform aws provider
+terraform file extensions are .tf
+terraform uses HCL --> Hashicorp configuration language
+
+resource "type-of-resource" "name-of-resource" {
+	your-parameters
+}
+
+resource "aws_instance" "this" {
+
+}
+
+terraform init
