@@ -5,11 +5,11 @@ Improvements
 Ansible vault to SSM parameter/secret integration with Ansible
 IAM Users migration to IAM Roles -->
 
-shell, ansible, terraform,sql, perl, customised scriptings
+shell, ansible, terraform,sql, perl, customised scripting
 1. syntax --> variables, data types, conditions, functions and loops, error handling
-2. process understanding
+2. Process understanding
 
-CRUD --> Ansible is failed to manage the infrastrucutre. For example if some manual edits happen ansible can't recognise those. It creates duplicate resources. So ansible is not perfect in state management
+CRUD --> Ansible is failed to manage the infrastructure. For example, if some manual edits happen ansible can't recognise those. It creates duplicate resources. So ansible is not perfect in state management
 
 Ansible --> with in the server, Ansible is perfect
 
