@@ -16,7 +16,7 @@ Ansible --> Within the server, Ansible is perfect
 Manual infra
 =============
 1. time
-2. human errors
+2. Human errors
 3. cost
 4. reusable effort
 5. don't know who did mistake
