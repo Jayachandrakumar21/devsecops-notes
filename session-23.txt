@@ -19,8 +19,8 @@ Manual infra
 2. Human errors
 3. cost
 4. reusable effort
-5. don't know who did mistake
-6. modifications are not easy
+5. Don't know who made  mistake
+6. Modifications are not easy
 7. not scalable
 
 IaaC --> Infra as a code
