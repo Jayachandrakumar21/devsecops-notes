@@ -25,11 +25,11 @@ Manual infra
 
 IaaC --> Infra as a code
 
-version control --> you can version control your infra. expense-infra-1.0 expense-infra-2.0
+Version control --> you can version control your infra. expense-infra-1.0 expense-infra-2.0
 restore if something goes wrong --> easy to restore if something goes wrong
-Consistent infra --> you can create same infra across all environments
+Consistent infra --> you can create the same infra across all environments
 Inventory management --> you can understand the resources by seeing terraform files
-dependency management --> terraform can understand the dependency between resources. First it will create dependencies and then actual resources
+Dependency management --> Terraform can understand the dependencies between resources. First, it will create dependencies and then actual resources
 code reusability --> terraform modules, you can create similar infra for any number of projects using modules
 Cost --> automation of CRUD --> we can save costs
 state management
