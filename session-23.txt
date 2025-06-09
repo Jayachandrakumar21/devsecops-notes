@@ -28,7 +28,7 @@ IaaC --> Infra as a code
 Version control --> you can version control your infra. expense-infra-1.0 expense-infra-2.0
 restore if something goes wrong --> easy to restore if something goes wrong
 Consistent infra --> you can create the same infra across all environments
-Inventory management --> you can understand the resources by seeing terraform files
+Inventory management --> you can understand the resources by seeing the terraform files
 Dependency management --> Terraform can understand the dependencies between resources. First, it will create dependencies and then actual resources
 code reusability --> terraform modules, you can create similar infra for any number of projects using modules
 Cost --> automation of CRUD --> we can save costs
@@ -37,7 +37,7 @@ declarative --> easy syntax
 Git --> you can review the code before apply
 
 ansible modules
-terraform providers --> provider means, a system which terraform can connect and create resources
+terraform providers --> provider means a system which terraform can connect and create resources
 
 	terraform aws provider
 terraform file extensions are .tf
