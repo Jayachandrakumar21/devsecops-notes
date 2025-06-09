@@ -34,7 +34,7 @@ code reusability --> terraform modules, you can create similar infra for any num
 Cost --> automation of CRUD --> we can save costs
 state management
 declarative --> easy syntax
-Git --> you can review code before apply
+Git --> you can review the code before apply
 
 ansible modules
 terraform providers --> provider means, a system which terraform can connect and create resources
