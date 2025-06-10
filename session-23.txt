@@ -37,7 +37,7 @@ declarative --> easy syntax
 Git --> you can review the code before apply
 
 ansible modules
-terraform providers --> provider means a system which terraform can connect and create resources
+terraform providers --> provider means a system that Terraform can connect to and create resources
 
 	terraform aws provider
 terraform file extensions are .tf
