@@ -1,9 +1,9 @@
 Initial Terraform setup on local laptop.
 1. Download terraform.exe and mention its path in the system environment variables. To check, run cmd , " which terraform"
 2. Create a user in IAM with admin access and also create Access key ID , Access secret key 
-3. install aws cli v2
-4. run "aws configure" cmd and give the create Access key ID , Access secret key 
-5. creat github reop for terraform and clone it on local system/laptop
+3. Install AWS CLI v2
+4. Run "aws configure" command and give the create Access key ID, Access secret key 
+5. Create a GitHub repo for Terraform and clone it on your local system/laptop
 6. firstly creat provider.tf file . here we have give aws provider configuration script into the file , this you can find it in web.
 
 variables
