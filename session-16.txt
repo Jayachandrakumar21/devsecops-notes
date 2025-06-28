@@ -1,11 +1,11 @@
-Disadvantages of shell
+Disadvantages of the shell
 ======================
 Error Handling
 Not idempotent
-Homogenous --> only works for a particular distro
+Homogeneous --> only works for a particular distro
 Not scalable to many servers
 Password security
-syntax is not easy
+Syntax is not easy
 
 Configuring Server --> plain server to usable server
 
