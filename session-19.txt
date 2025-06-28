@@ -1,4 +1,4 @@
-unarchive --> ansible by default thinks src is in the ansible control machine.
+unarchive --> Ansible by default thinks src is in the Ansible control machine.
 
 Ansible Roles --> DRY (don't repeat yourself) code-reuse
 
@@ -12,6 +12,6 @@ Ansible config --> /etc/ansible/ansible.cfg
 
 4. /etc/ansible/ansible.cfg
 
-user, group, roles and permissions
+user, group, roles, and permissions
 user --> access
 service --> service
