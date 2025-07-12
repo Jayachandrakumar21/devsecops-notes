@@ -28,7 +28,7 @@ sudo su - --> lands in the root user's home folder /root
 ls --> list subdirectories
 
 ls -l --> long listing format with more details
-ls -lr --> reverse alpha order
+ls -lr --> reverse alphabetic order
 ls -lt --> new files on top
 ls -ltr --> old files on top
 ls -ltrh --> human readable
@@ -41,7 +41,7 @@ lrw-r--r-- --> Link files
 touch <file-name> --> creates empty file
 
 cat > devops.txt
-cat > DevSecOps.txt --> enter the text, once done Enter and press ctrl+d
+cat > DevSecOps.txt --> enter the text, once done, Enter and press ctrl+d
 >> --> append, adds to the current text
 
 mkdir <name> --> creates directory
