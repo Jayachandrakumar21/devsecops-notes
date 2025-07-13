@@ -1,13 +1,14 @@
 Created by: jayachandra_kumar
 
-ssh -i <path-to-your-private-key> ec2-user@IP
+#command to login into linux server
+ssh -i <path-to-your-private-key.pem> ec2-user@IP
 
-absolute path and relative path
+#absolute path and relative path
 
 /c/devops/daws-82s/daws-82s.pem --> absolute path
 daws-82s/daws-82s.pem --> relative path
 
-clear
+clear --> clears the terminal screen
 
 $ --> denotes normal user
 sudo su --> root access
