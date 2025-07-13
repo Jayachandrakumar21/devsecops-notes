@@ -1,6 +1,5 @@
 Created by: Jayachandra Kumar
-vim editor
-user management
+Topics : vim editor, user management
 
 Esc mode is the default
 Press: to enter into command mode
