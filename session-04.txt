@@ -1,10 +1,10 @@
 Created by: Jayachandra Kumar
-Topics : vim editor, user management
+Topics: Vim editor, user management
 
 Esc mode is the default
 Press: to enter into command mode
 
-command mode
+colon/command mode
 ----------------
 :q --> quit
 :wq --> write and quit
