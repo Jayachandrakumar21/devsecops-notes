@@ -13,7 +13,7 @@ colon/command mode
 :?<word-to-find> --> search the word from bottom to top
 :noh --> no highlight
 :set nu --> set line numbers in the file
-:set nonu --> dont set line numbers
+:set nonu --> don't set line numbers
 :28 d --> deleted 28th line
 :3s/word-to-find/word-to-replace --> replaces first occurenece in that line
 :3s/word-to-find/word-to-replace/g --> replaces all occureneces in that line
@@ -28,7 +28,7 @@ p --> paste
 10p --> paste the lines 10 times
 dd --> cut the line
 gg --> takes to top
-shift+g --> takes to bottom
+shift+g --> takes to the bottom
 
 Insert Mode
 ---------------
