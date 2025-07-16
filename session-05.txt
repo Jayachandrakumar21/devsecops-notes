@@ -1,4 +1,4 @@
-Created by :Jayachandra_kumar
+Created by: Jayachandra_kumar
 Permissions
 -----------------
 R -> 4
@@ -12,7 +12,7 @@ ec2-user --> Owner --> Read and Write
 ec2-user --> Group --> Only Read
 Others --> Other than and owner and group --> Only read
 
-Who can change permissions of file or folder --> owners or root user
+Who can change the permissions of a file or folder --> owner or the root user
 
 owner/user --> u
 group --> g
