@@ -44,7 +44,7 @@ useradd <user-name> --> creates user and group with same name
 id <user-name> --> displays user information
 /etc/passwd --> contains user information
 /etc/group --> contains group information
-in linux, a user must have only one primary group and atleast secondary group
+in linux, a user must have only one primary group and atleast one secondary group.
 passwd <user-name> --> sets password to the user
 
 groupadd <group-name> --> creates group
