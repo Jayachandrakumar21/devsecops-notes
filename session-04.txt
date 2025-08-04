@@ -28,7 +28,7 @@ p --> paste
 10p --> paste the lines 10 times
 dd --> cut the line
 gg --> takes to top
-shift+g --> takes to the bottom
+shift+g --> takes you to the bottom
 
 Insert Mode
 ---------------
@@ -40,7 +40,7 @@ User management
 
 create user, add user to any group
 
-useradd <user-name> --> creates user and group with same name
+useradd <user-name> --> creates user and group with the same name
 id <user-name> --> displays user information
 /etc/passwd --> contains user information
 /etc/group --> contains group information
@@ -69,3 +69,4 @@ systemctl restart sshd
 sshd -t --> check config is correct or not
 
 key based authentication --> ramesh should generate his public key and private key...
+
