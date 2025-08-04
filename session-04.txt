@@ -55,18 +55,19 @@ usermod -aG testing ramesh --> adds testing as secondary group to ramesh
 CRUD --> 
 
 userdel <user-name>  // delete user
-remove from all projects first, and now remove from company
+remove from all projects first, and now remove from the company
 make sure to first remove from group/project and go for user delete, 
-to do that,do usermod  to his default primary group and sub-groups later u may delete user.
+to do that,do usermod  to his default primary group and sub-groups later, u may delete the user.
 
-later remove him from devops group 
+Later remove him from the DevOps group 
 
-Linux follows key based authentication by default
+Linux follows key-based authentication by default
 
 /etc/ssh/sshd_config --> edit the SSH related configuration
-/etc/ssh/sshd_config --> any mistakes in this file, we cant ssh into server
+/etc/ssh/sshd_config --> any mistakes in this file, we can't SSH into the server
 systemctl restart sshd
 sshd -t --> check config is correct or not
 
 key based authentication --> ramesh should generate his public key and private key...
+
 
