@@ -12,7 +12,7 @@ clear --> clears the terminal screen
 
 $ --> denotes normal user
 sudo su --> root access
-\# --> denotes admin/root user
+/# --> denotes admin/root user
 
 /home/<user-name>
 
@@ -101,3 +101,4 @@ find <which-location> -name "<file-name>"
 find / -name "passwd"
 
 vim editor
+
