@@ -12,7 +12,7 @@ clear --> clears the terminal screen
 
 $ --> denotes normal user
 sudo su --> root access
-\# --> denotes admin/root user
+/# --> denotes admin/root user
 
 /home/<user-name>
 
@@ -57,7 +57,7 @@ curl and wget
 
 wget <URL> -->  Downloads the file
 curl <URL> --> Shows the content on the screen
-curl <URL> -o <path> --> donwloads the file with name given
+curl <URL> -o <path> --> donwloads the file with name given in given path
 
 https://raw.githubusercontent.com/DAWS-82S/notes/refs/heads/main/session-02.md
 
@@ -101,3 +101,5 @@ find <which-location> -name "<file-name>"
 find / -name "passwd"
 
 vim editor
+
+
