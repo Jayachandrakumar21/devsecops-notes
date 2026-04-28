@@ -90,7 +90,7 @@ f:no, apartment name, pincode
 
 siva, 523764
 
-ssh -i ec2-user@IP /logging into linux server using ssh_key
+ssh -i ec2-user@IP / cmd to used logging into linux server using ssh_key
 
 Create public and private keys
 Import public key
